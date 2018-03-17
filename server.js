@@ -19,12 +19,12 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use((req, res, next) => {
-    res.render('maintenence.hbs', {
-        pageTitle: 'Maintenence Page',
-        pageBody: 'Under Maintenence!!'
-    })
-})
+// app.use((req, res, next) => {
+//     res.render('maintenence.hbs', {
+//         pageTitle: 'Maintenence Page',
+//         pageBody: 'Under Maintenence!!'
+//     })
+// })
 
 app.use(express.static(__dirname + '/public'))
 
